@@ -26,8 +26,8 @@ public class GuiMain extends Application {
 		root.getChildren().add(area);
 		
 		MyDataBase db = new MyDataBase();
-		db.addIntoDB("—≈¬¿ ", "¿¬≈“»—ﬂÕ");
-		db.addIntoDB("“≈—“Œ¬€…", "œ–»Ã≈–");
+		db.addIntoDB("–°–ï–í–ê–ö", "–ö–£–õ–•–ê–¶–ö–ï–†");
+		db.addIntoDB("–¢–ï–°–¢", "–ü–†–û–§–ï–°–°–ò–Ø");
 		
 		List<String> all = db.getAllFromDB();
 		for(String s : all) {

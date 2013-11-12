@@ -29,12 +29,12 @@ public class MyDataBase implements AutoCloseable {
 	}
 	
 	private void createTable() throws SQLException {
-		st.executeUpdate("create table Àﬁƒ» (»Ãﬂ, œ–Œ‘≈——»ﬂ);");
-		prepSt = bd.prepareStatement("insert into Àﬁƒ» values (?, ?);");
+		st.executeUpdate("create table –õ–Æ–î–ò (–ò–ú–Ø, –ü–†–û–§–ï–°–°–ò–Ø);");
+		prepSt = bd.prepareStatement("insert into –õ–Æ–î–ò values (?, ?);");
 	}
 	
 	public void deleteTable() throws SQLException {
-		st.executeUpdate("drop table if exists Àﬁƒ»;");
+		st.executeUpdate("drop table if exists –õ–Æ–î–ò;");
 	}
 
 	public void addIntoDB(String name, String occupation) throws SQLException {
@@ -52,11 +52,11 @@ public class MyDataBase implements AutoCloseable {
 	}
 	
 	public List<String> getAllFromDB() throws SQLException {
-		rs = st.executeQuery("select * from Àﬁƒ»;");
+		rs = st.executeQuery("select * from –õ–Æ–î–ò;");
 		
 		List<String> sb = new ArrayList<>();
 		while (rs.next()) {
-			sb.add("name = " + rs.getString("»Ãﬂ") + "\t\tjob = " + rs.getString("œ–Œ‘≈——»ﬂ"));
+			sb.add("name = " + rs.getString("–ò–ú–Ø") + "\t\tjob = " + rs.getString("–ü–†–û–§–ï–°–°–ò–Ø"));
 		}
 		return sb;
 	}
